@@ -1,0 +1,22 @@
+use std::io;
+
+fn main(){
+    let mut string = String::new();
+    io::stdin().read_line(&mut string)
+    .expect("Failed to read line");
+
+    let string = string.trim();
+    
+    if palindrome(string){
+        println!("Yes Palindrome");
+    }
+    else {
+        println!("No Palindrome");
+    }
+
+}
+
+fn palindrome() {
+// wtf, how tf - do you convert string (with potentially numbers) into a tupule, and then check if it is the same forwards and backwards
+//there's gotta be an easier way right
+} 
